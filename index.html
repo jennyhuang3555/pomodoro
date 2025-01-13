@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Focus Timer</h1>
+            <div class="mode-switch">
+                <div class="switch-labels">
+                    <span class="work-label">Work</span>
+                    <span class="rest-label">Rest</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="mode-toggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <div class="motivation-text" id="motivation-text">Time to work, Bruno! 😊</div>
+        <div class="timer-container">
+            <svg class="timer-circle" viewBox="0 0 100 100">
+                <circle class="timer-background" cx="50" cy="50" r="45"/>
+                <circle class="timer-progress" cx="50" cy="50" r="45"/>
+            </svg>
+            <div class="timer">
+                <span id="minutes">25</span><span class="separator">:</span><span id="seconds">00</span>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <audio id="bell" src="gladiator.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html> 
